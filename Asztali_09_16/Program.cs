@@ -19,16 +19,16 @@
 
             // 3.feladat
             Console.WriteLine("Adj meg egy számot");
-            int szam = int.Parse(Console.ReadLine());
+            double szam = double.Parse(Console.ReadLine());
             Console.WriteLine($"A szám kétszerese: { szam * 2}");
             
             Console.WriteLine("-----------------");
 
             // 4.feladat
             Console.WriteLine("Adj meg egy számot");
-            int szam1 = int.Parse(Console.ReadLine());
+            double szam1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Adj meg egy számot");
-            int szam2 = int.Parse(Console.ReadLine());
+            double szam2 = double.Parse(Console.ReadLine());
              Console.WriteLine("------------");
             Console.WriteLine($"A számok összege: {szam1 + szam2}");
             Console.WriteLine($"A számok különbsége: {szam1 % szam2}");
@@ -98,12 +98,12 @@
             /*
             // 9. feladat
             Console.WriteLine("Adj meg egy számot");
-            int a = int.Parse(Console.ReadLine());
+            double a = double.Parse(Console.ReadLine());
             Console.WriteLine("Adj meg egy számot");
-            int b = int.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
             Console.WriteLine("Adj meg egy számot");
-            int c = int.Parse(Console.ReadLine());
-            int D = b * b - 4 * a * c;
+            double c = double.Parse(Console.ReadLine());
+            double D = b * b - 4 * a * c;
             if (D >= 0) 
             {
                 Console.WriteLine("Van megoldása");
@@ -116,12 +116,12 @@
 
             // 10. feladat
             Console.WriteLine("Adj meg egy számot");
-            int a = int.Parse(Console.ReadLine());
+            double a = double.Parse(Console.ReadLine());
             Console.WriteLine("Adj meg egy számot");
-            int b = int.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
             Console.WriteLine("Adj meg egy számot");
-            int c = int.Parse(Console.ReadLine());
-            int D = b * b - 4 * a * c;
+            double c = double.Parse(Console.ReadLine());
+            double D = b * b - 4 * a * c;
             if (D >= 0)
             {
                 Console.WriteLine($"Az egynelet megoldása: {Math.Sqrt(D)}");
@@ -133,9 +133,9 @@
            
             // 11. feladat
             Console.WriteLine("Adj meg a háromszög befogóját");
-            double a = int.Parse(Console.ReadLine());
+            double a = double.Parse(Console.ReadLine());
             Console.WriteLine("Adj meg a háromszög másik befogóját");
-            double b = int.Parse(Console.ReadLine());              
+            double b = double.Parse(Console.ReadLine());              
             double atfogo = Math.Sqrt(a * a + b * b);
 
             Console.WriteLine($"Az átfogó: {atfogo:F2}");
@@ -144,14 +144,14 @@
 
             // 12. feladat
             Console.WriteLine("Téglatest egyik éle:");
-            int a = int.Parse(Console.ReadLine());
+            double a = double.Parse(Console.ReadLine());
             Console.WriteLine("Téglatest másik éle:");
-            int b = int.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
             Console.WriteLine("Téglatest harmadik éle:");
-            int c = int.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
 
-            int terfogat = a * b * c;
-            int felszin = 2 * (a * b + a * c + b * c);
+            double terfogat = a * b * c;
+            double felszin = 2 * (a * b + a * c + b * c);
 
             Console.WriteLine($"A télatest térfogata: {terfogat:F2}");
             Console.WriteLine($"A télatest felszíne: {felszin:F2}");
@@ -159,31 +159,31 @@
           // 13. feladat
 
           Console.WriteLine("A kör átmérője:");
-            int atmero = int.Parse(Console.ReadLine());
-            int sugar = atmero / 2;
+            double atmero = double.Parse(Console.ReadLine());
+            double sugar = atmero / 2;
 
-            int kerulet = atmero * (int)Math.PI;
-            int terulet = sugar * sugar * (int)Math.PI;
+            double kerulet = atmero * Math.PI;
+            double terulet = sugar * sugar * Math.PI;
 
             Console.WriteLine($"A kör kerülete: {kerulet:F2}");
             Console.WriteLine($"A télatest területe: {terulet:F2}");
 
-              
+              */
 
             // 14. feladat
 
             Console.WriteLine("Körív sugara:");
-            int sugara = int.Parse(Console.ReadLine());
+            double sugara = double.Parse(Console.ReadLine());
             Console.WriteLine("Középponti szöge:");
-            int szoge = int.Parse(Console.ReadLine());
+            double szoge = double.Parse(Console.ReadLine());
 
-            int korivTerulet = szoge / 360  * (sugara * 2) * (int)Math.PI;
-            int hataroloIv = szoge / 360 * (sugara * sugara) * (int)Math.PI;
+            double korivTerulet = szoge / 360  * (sugara * 2) * Math.PI;
+            double hataroloIv = szoge / 360 * (sugara * sugara) * Math.PI;
 
             Console.WriteLine($"A körív területe: {korivTerulet:F2}");
             Console.WriteLine($"A határoló ív hossza: {hataroloIv:F2}");
 
-            */
+            
         }
     }
 }

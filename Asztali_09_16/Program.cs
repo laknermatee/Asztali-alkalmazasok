@@ -98,7 +98,7 @@
             // 13. feladat
 
             // 14. feladat
-
+            Console.WriteLine();
 
         }
     }

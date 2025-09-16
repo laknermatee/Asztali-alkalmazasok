@@ -168,7 +168,7 @@
             Console.WriteLine($"A kör kerülete: {kerulet:F2}");
             Console.WriteLine($"A télatest területe: {terulet:F2}");
 
-              */
+              
 
             // 14. feladat
 
@@ -183,7 +183,7 @@
             Console.WriteLine($"A körív területe: {korivTerulet:F2}");
             Console.WriteLine($"A határoló ív hossza: {hataroloIv:F2}");
 
-            
+            */
         }
     }
 }

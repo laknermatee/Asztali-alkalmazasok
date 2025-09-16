@@ -19,7 +19,7 @@
             // 3.feladat
             Console.WriteLine("Adj meg egy számot");
             int szam = int.Parse(Console.ReadLine());
-            Console.WriteLine(szam*2);
+            Console.WriteLine($"A szám kétszerese: { szam * 2}");
             
             Console.WriteLine("-----------------");
 
@@ -29,9 +29,9 @@
             Console.WriteLine("Adj meg egy számot");
             int szam2 = int.Parse(Console.ReadLine());
              Console.WriteLine("------------");
-            Console.WriteLine(szam1 + szam2);
-            Console.WriteLine(szam1 % szam2);
-            Console.WriteLine(szam1 * szam2);
+            Console.WriteLine($"A számok összege: {szam1 + szam2}");
+            Console.WriteLine($"A számok különbsége: {szam1 % szam2}");
+            Console.WriteLine($"A számok szorzata: {szam1 * szam2}");
            
             if (szam1 > szam2)
             {
@@ -52,11 +52,11 @@
             Console.WriteLine("------------");
 
             if (szam3 > szam4) {
-                Console.WriteLine(szam3);
+                Console.WriteLine($"A nagyobbik szám: {szam3}");
             }
             else
             {
-                Console.WriteLine(szam4);
+                Console.WriteLine($"A nagyobbik szám: {szam4}");
             }
             Console.WriteLine("------------");
 
@@ -72,18 +72,32 @@
 
             if (szam5 < szam6 && szam5 < szam7)
             {
-                Console.WriteLine(szam5);
+                Console.WriteLine($"A legkisebb szám: {szam5}");
             }
             else if (szam6 < szam5 && szam6 < szam7) {
                 
-                Console.WriteLine(szam6);
+                Console.WriteLine($"A legkisebb szám: {szam6}");
             }
             else
             {
-                Console.WriteLine(szam7);
+                Console.WriteLine($"A legkisebb szám: {szam7}");
             }
             Console.WriteLine("------------");
             // 7. feladat
+
+            // 8. feladat
+
+            // 9. feladat
+
+            // 10. feladat
+
+            // 11. feladat
+
+            // 12. feladat
+
+            // 13. feladat
+
+            // 14. feladat
 
 
         }

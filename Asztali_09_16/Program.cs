@@ -186,7 +186,140 @@
             */
 
 
+            // 15. feladat
+            Console.WriteLine("Adj meg egy pozitív egész számot:");
+            int sz15 = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= sz15; i++)
+            {
+                Console.Write(i + " ");
+            }
             Console.WriteLine();
+
+
+            // 16. feladat
+            Console.WriteLine("Adj meg egy pozitív egész számot:");
+            int sz16 = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= sz16; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            // 17. feladat
+            Console.WriteLine("Adj meg egy pozitív egész számot:");
+            int sz17 = int.Parse(Console.ReadLine());
+            Console.WriteLine("A(z) " + sz17 + " osztói:");
+            for (int i = 1; i <= sz17; i++)
+            {
+                if (sz17 % i == 0)
+                    Console.Write(i + " ");
+            }
+            Console.WriteLine();
+
+
+            // 18. feladat
+            Console.WriteLine("Adj meg egy pozitív egész számot:");
+            int sz18 = int.Parse(Console.ReadLine());
+            int ossz18 = 0;
+            for (int i = 1; i <= sz18; i++)
+            {
+                if (sz18 % i == 0)
+                    ossz18 += i;
+            }
+            Console.WriteLine($"Az osztók összege: {ossz18}");
+
+
+            // 19. feladat
+            Console.WriteLine("Adj meg egy pozitív egész számot:");
+            int sz19 = int.Parse(Console.ReadLine());
+            int ossz19 = 0;
+            for (int i = 1; i < sz19; i++)
+            {
+                if (sz19 % i == 0)
+                    ossz19 += i;
+            }
+            if (ossz19 == sz19)
+                Console.WriteLine("A szám tökéletes szám.");
+            else
+                Console.WriteLine("A szám nem tökéletes szám.");
+
+
+            // 20. feladat
+            Console.WriteLine("Hatványalap:");
+            int alap20 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kitevő:");
+            int kitevo20 = int.Parse(Console.ReadLine());
+            int hatvany20 = 1;
+            for (int i = 1; i <= kitevo20; i++)
+            {
+                hatvany20 *= alap20;
+            }
+            Console.WriteLine($"Hatványérték: {hatvany20}");
+
+
+            // 21. feladat
+            int sz21;
+            do
+            {
+                Console.WriteLine("Adj meg egy pozitív számot:");
+                sz21 = int.Parse(Console.ReadLine());
+            } while (sz21 <= 0);
+            Console.WriteLine($"Elfogadott szám: {sz21}");
+
+
+            // 22. feladat
+            int ossz22 = 0;
+            int sz22;
+            do
+            {
+                Console.WriteLine("Adj meg egy számot:");
+                sz22 = int.Parse(Console.ReadLine());
+                if (sz22 < 100)
+                    ossz22 += sz22;
+            } while (sz22 < 100);
+            Console.WriteLine($"A 100 alatti számok összege: {ossz22}");
+
+
+            // 23. feladat
+            Console.WriteLine("Adj meg egy egész számot:");
+            int sz23 = int.Parse(Console.ReadLine());
+            Console.Write($"{sz23} = ");
+            bool elso23 = true;
+            while (sz23 % 2 == 0)
+            {
+                if (!elso23) Console.Write("*");
+                Console.Write("2");
+                sz23 /= 2;
+                elso23 = false;
+            }
+            if (sz23 > 1)
+            {
+                if (!elso23) Console.Write("*");
+                Console.Write(sz23);
+            }
+            Console.WriteLine();
+
+
+            // 24. feladat
+            string szo24;
+            do
+            {
+                Console.WriteLine("Írd be a szót:");
+                szo24 = Console.ReadLine();
+            } while (szo24 != "alma");
+            Console.WriteLine("Az alma gyümölcs!");
+
+
+            // 25. feladat
+            Console.WriteLine("Adj meg egy egész számot:");
+            int sz25 = int.Parse(Console.ReadLine());
+            Console.Write($"{sz25} = ");
+            while (sz25 >= 3)
+            {
+                Console.Write("3+");
+                sz25 -= 3;
+            }
+            Console.WriteLine(sz25);
         }
     }
 }

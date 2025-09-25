@@ -184,6 +184,9 @@
             Console.WriteLine($"A határoló ív hossza: {hataroloIv:F2}");
 
             */
+
+
+            Console.WriteLine();
         }
     }
 }
